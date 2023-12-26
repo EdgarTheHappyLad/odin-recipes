@@ -17,6 +17,11 @@
 <body>
 
   <style>
+    * {
+      font-family: Skranji;
+      margin: 0;
+    }
+
     body {
 
       background-color: antiquewhite;
@@ -26,21 +31,36 @@
     a {
       font-size: 30px;
       font-family: Ogg TRIAL;
+
     }
 
-    h1 {
+    .heading {
       position: relative;
       display: grid;
       justify-content: center;
     }
+
+    .links {
+      display: flex;
+      height: 40px;
+    }
+
+    button {
+      font-size: 20px;
+    }
   </style>
 
-  <h1>Odin Recipes</h1>
-  <a href="recipes/tacos.html">Taco Recipe</a>
-  <span style="width: 30px;">&#x2022</span>
-  <a href="recipes/burrito.html">Burrito Recipe</a>
-  <span style="width: 30px;">&#x2022</span>
-  <a href="recipes/churro.html">Churro Recipe</a>
+  <h1 class="heading">Odin Recipes</h1>
+
+  </div>
+
+  <div class="links">
+    <button onclick="window.location.href='recipes/tacos.html'" class="recipe tacos">Taco Recipe</button>
+    <button onclick="window.location.href='recipes/burritos.html'" class="recipe burritos">Burrito Recipe</button>
+    <button onclick="window.location.href='recipes/churro.html'" class="recipe churros">Churro Recipe</button>
+
+  </div>
+
 
 
 </body>
